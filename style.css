@@ -6,9 +6,12 @@
   font-size: var(--Fontsize);
   box-sizing: border-box;
  font-family: 'Public Sans', sans-serif;
+
 }
 
-
+body{
+  overflow-x: hidden;
+}
  
  
 :root {
@@ -86,7 +89,8 @@ menu {
 }
 
 .icon-hamburger {
-  display: none;
+opacity: 0;
+/* display: none; */
 }
 
 .RequestBtn button {
@@ -113,6 +117,19 @@ menu {
   /* width: 30%; */
 }
 
+
+.HeroSection_PremireSec {
+  padding-top: 5%;
+  gap: 3%;
+  display: flex;
+  /* width: 490px; */
+  width: 45%;
+  padding-left: 78px;
+ 
+  flex-direction: column;
+}
+
+
 .HeroSection {
   display: flex; 
   justify-content: space-around;
@@ -121,18 +138,12 @@ menu {
  
 }
 
-.HeroSection_PremireSec{
-  /* width: 490px; */
-  width: 45%;
-  padding-left: 78px;
-  
-background-color: #de4949;
-}
+ 
 
 .HeroSection_PremireSec p {
 
 width: 80%;
-background-color: blue;
+ 
 }
 
 .HeroSection_PremireSec h1 {
@@ -149,6 +160,9 @@ width: 55%;
  /* background-color: yellow; */
 position: relative; 
   height: 660px;
+  /* overflow-x: hidden; */
+ 
+ 
   padding-right: 10%;
 }
 
@@ -166,20 +180,21 @@ position: relative;
 .MobileImageSecond{
   position: absolute;
   z-index: -10;
- 
+ width: 100%;
   height: 880px;
-  left: 169px;
-   
+  left: 169px; 
   top: -100px;
-
+ 
 }
 
 .Service_division{
-background-color: red;
+ 
 position: relative;
 z-index: -33;
 margin: auto 5%;
 padding: 1%;
+  width: 69%; 
+
 }
 
 
@@ -189,3 +204,90 @@ padding: 1%;
   background-size: 100%;
   background-repeat: no-repeat;
 } */
+
+@media screen and ( width <1340px) { 
+  .MobileImageSecond{
+   padding-right:130px ;
+  }
+
+}
+
+ 
+
+
+
+@media screen and ( width < 900px) { 
+  .icon-hamburger{ 
+      opacity:1;
+      /* display: none; */
+     
+  }
+.ReqHead{
+display: none;
+}
+
+
+.HeroSection {
+ 
+  flex-direction: column-reverse;
+}
+
+
+.Header_UL
+{
+display: none;
+
+}
+.HeroSection_PremireSec 
+{ margin-top: 20%;
+  gap: 20px;
+  width: 100%;
+  align-items: center;
+  padding-left: 0;
+  padding: 20px;
+
+}
+
+.HeroSection_img
+{
+  width: 100%;
+}
+.MobileImageFirst {
+  position: relative;
+  height: 972px;
+  z-index: -20;
+  right: 155px;
+  top: -326px;
+}
+.MobileImageSecond {
+ 
+  left: 81px;
+ 
+}
+ 
+
+.HeroSection_PremireSec p {
+  text-align: center;
+  width: 87%;
+
+}
+.HeroSection_PremireSec h1 {
+  font-size: 35px;
+  text-align: center;
+ 
+}
+
+.Service_division {
+  background-color: red;
+  position: relative;
+  z-index: -33;
+  margin: 0;
+  padding: 0%;
+  width: 100%;
+  text-align: center;
+}
+
+
+Service_division
+ 
+}
