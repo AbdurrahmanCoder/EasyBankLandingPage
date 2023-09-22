@@ -5,15 +5,15 @@
   margin: 0;
   font-size: var(--Fontsize);
   box-sizing: border-box;
- font-family: 'Public Sans', sans-serif;
+  font-family: 'Public Sans', sans-serif;
 
 }
 
-body{
+body {
   overflow-x: hidden;
 }
- 
- 
+
+
 :root {
   --DarkBlue: hsl(233, 26%, 24%);
   --LimeGreen: hsl(136, 65%, 51%);
@@ -22,34 +22,36 @@ body{
   --LightGrayishBlue: hsl(220, 16%, 96%);
   --VeryLightGray: hsl(0, 0%, 98%);
   --White: hsl(0, 0%, 100%);
-  
+
   /* fonts */
-  
+
   --Fontsize: 18px;
 }
 
-header{
+header {
   /* background-color: #de4949; */
-width: 100%;
-position: relative;
-z-index: 100;
- background-color: #fff;  padding: 1%;
-
-
+  width: 100%;
+  position: relative;
+  z-index: 100;
+  background-color: #fff;
+  padding: 1%; 
 
 }
+.Header_UL {
+ display: flex;
+ }
+
+
+
 menu {
-  
+
   display: flex;
   justify-content: space-between;
   align-items: center;
-    margin: auto 5%;
-  
-}
+  margin: auto 5%;
 
-.Header_UL {
-  display: flex;
 }
+ 
 .Header_UL li {
   list-style: none;
   /* padding-left: 10px; */
@@ -60,23 +62,22 @@ menu {
 }
 
 .Header_UL li {
-  position: relative; /* Add relative positioning to the list item */
+  position: relative;
+  /* Add relative positioning to the list item */
 }
 
 .Header_UL li::after {
   content: " ";
   position: absolute;
-  bottom: -10px; 
+  bottom: -10px;
   left: 0;
   width: 100%;
   height: 2px;
   visibility: hidden;
   transition: background-color 0.3s;
-  background-image: linear-gradient(
-    to right,
-    var(--LimeGreen),
-    var(--BrightCyan)
-  );
+  background-image: linear-gradient(to right,
+      var(--LimeGreen),
+      var(--BrightCyan));
 }
 
 .Header_UL li:hover::after {
@@ -89,16 +90,14 @@ menu {
 }
 
 .icon-hamburger {
-opacity: 0;
-/* display: none; */
+  opacity: 0;
+  /* display: none; */
 }
 
 .RequestBtn button {
-  background-image: linear-gradient(
-    to right,
-    var(--LimeGreen),
-    var(--BrightCyan)
-  );
+  background-image: linear-gradient(to right,
+      var(--LimeGreen),
+      var(--BrightCyan));
   /* padding: 15px; */
   width: 160px;
   height: 42px;
@@ -125,25 +124,25 @@ opacity: 0;
   /* width: 490px; */
   width: 45%;
   padding-left: 78px;
- 
+
   flex-direction: column;
 }
 
 
 .HeroSection {
-  display: flex; 
+  display: flex;
   justify-content: space-around;
   margin: auto 1px;
 
- 
+
 }
 
- 
+
 
 .HeroSection_PremireSec p {
 
-width: 80%;
- 
+  width: 80%;
+
 }
 
 .HeroSection_PremireSec h1 {
@@ -151,51 +150,151 @@ width: 80%;
   width: 80%;
 
   font-size: 55px;
-font-weight: 300;
-color: var(--DarkBlue);
+  font-weight: 300;
+  color: var(--DarkBlue);
 }
 
-.HeroSection_img{
-width: 55%;
- /* background-color: yellow; */
-position: relative; 
+.HeroSection_img {
+  width: 55%;
+  /* background-color: yellow; */
+  position: relative;
   height: 660px;
   /* overflow-x: hidden; */
- 
- 
+
+
   padding-right: 10%;
 }
 
-.MobileImageFirst{
+.MobileImageFirst {
 
   position: relative;
   height: 972px;
   z-index: -20;
- 
+
   right: -30px;
   top: -250px;
 
 }
- 
-.MobileImageSecond{
+
+.MobileImageSecond {
   position: absolute;
   z-index: -10;
- width: 100%;
+  width: 100%;
   height: 880px;
-  left: 169px; 
+  left: 169px;
   top: -100px;
- 
-}
-
-.Service_division{
- 
-position: relative;
-z-index: -33;
-margin: auto 5%;
-padding: 1%;
-  width: 69%; 
 
 }
+
+.Service_division {
+
+  position: relative;
+  z-index: -33;
+  margin: auto 10%;
+  padding: 1%;
+  width: 69%;
+
+}
+.Service_division p {
+width: 70%;
+padding-top: 10px;
+}
+
+.ServiceList {
+  display: flex;
+  padding-top: 10%;
+  margin: auto 10%;
+  gap: 20px;
+
+}
+
+.ServiceList div {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  gap: 20px;
+}
+
+.ServiceList img{
+ width: 80px;
+ height: 80px;
+
+}
+
+.ServiceList p
+{
+  font-size: 13px;
+}
+
+.LatestArticlesMain{
+  margin-top:15%;
+
+  padding-top: 10%;
+  margin: auto 10%;
+}
+.LatestArticlesMain h1{
+  margin-bottom:3%;
+}
+
+.LatestArticles h6{
+  font-size: 8px;
+} 
+
+
+.LatestArticles h2{
+  font-size: 12px;
+} 
+
+.LatestArticles p{
+  font-size: 10px;
+} 
+
+
+.LatestArticles
+{ 
+  gap: 20px;
+  display: flex;
+} 
+
+.LatestArticles img {
+  width: 254px;
+  height: 205px;       
+  max-width: 100%;
+}
+/* max-width: 100%; */
+
+footer{
+  background-color: var(--DarkBlue);
+  display: flex;
+ 
+  margin: auto 10%; 
+  margin-top: 10%;
+  padding: 4%;
+  justify-content: space-between;
+}
+footer > div {display: flex;
+flex-direction: column;
+gap: 20px;
+}
+footer p {
+  color: white;
+  font-size: 13px;
+ color: var(--Grey);
+}
+#imageLogo2{
+  color: white;
+}
+
+footer p:hover{
+  color: var(--LimeGreen) !important;
+
+}
+
+.fa-brands:hover{
+  color: var(--LimeGreen) !important;
+}
+
+
 
 
 /* 
@@ -205,89 +304,235 @@ padding: 1%;
   background-repeat: no-repeat;
 } */
 
-@media screen and ( width <1340px) { 
-  .MobileImageSecond{
-   padding-right:130px ;
+
+/* **************************************** Media Queries Starts Here ************************** */
+
+@media screen and (width <1340px) {
+  .MobileImageSecond {
+    padding-right: 130px;
   }
 
 }
 
- 
 
 
 
-@media screen and ( width < 900px) { 
-  .icon-hamburger{ 
-      opacity:1;
-      /* display: none; */
-     
+
+@media screen and (width < 900px) {
+  .icon-hamburger {
+    opacity: 1;
+    /* display: none; */
+
   }
-.ReqHead{
-display: none;
+
+  .ReqHead {
+    display: none;
+  }
+
+
+  .HeroSection {
+
+    flex-direction: column-reverse;
+  }
+
+
+
+
+
+
+  .HeroSection_PremireSec {
+    /* padding-top: 50%; */
+    margin-top: 50%;
+    gap: 20px;
+    width: 100%;
+    align-items: center;
+    padding-left: 0;
+    padding: 20px;
+
+
+  }
+
+  .HeroSection_img {
+    width: 100%;
+  }
+
+  .MobileImageFirst {
+    position: relative;
+    height: 972px;
+    z-index: -20;
+    right: 155px;
+    top: -326px;
+  }
+
+  .MobileImageSecond {
+
+    left: 81px;
+
+  }
+
+  .HeroSection_PremireSec {
+    gap: 30px;
+  }
+
+  .HeroSection_PremireSec p {
+    text-align: center;
+    width: 87%;
+
+  }
+
+  .HeroSection_PremireSec h1 {
+    font-size: 35px;
+    text-align: center;
+
+  } 
+  .ServiceList {
+    flex-wrap: wrap;
+    flex-direction: row;
+    display: flex;
+    padding-top: 10%;
+    margin: auto 10%;
+    gap: 20px;
+    width: 90%;
+    justify-content: center;
+
 }
+.ServiceList  div {
+  width: 46%;
+  } 
+  
+
+.ServiceList  p {
+width: 50%;
+} 
 
 
-.HeroSection {
+
+
+  .Service_division {
+
+    position: relative;
+    z-index: -33;
+    margin: 0;
+    padding: 0%;
+    width: 100%;
+    text-align: center;
  
-  flex-direction: column-reverse;
+  }
+
+
+
+  
+  .Service_division {
+    display: flex;
+    margin-top: 20%;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .Service_division>h1 {
+    width: 50%;
+    text-align: center;
+  }
+
+  .Service_division>p {
+    width: 50%;
+    text-align: center;
+  }
+
+  .LatestArticles  div{
+    width: 40%;
+
+}
+
+  .LatestArticles {
+    gap: 40px;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+.LatestArticles p {
+width: 60%;
 }
 
 
-.Header_UL
-{
-display: none;
 
-}
-.HeroSection_PremireSec 
-{ margin-top: 20%;
-  gap: 20px;
-  width: 100%;
+.Header_UL {
+ position: fixed;
+  width: 90%;
+  height: 300px;
+  top: 190px;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
-  padding-left: 0;
-  padding: 20px;
+ 
+  background-color: rgb(255, 255, 255); 
+  display: none;
+  border-radius: 5px;
+}
+
+
+ .newClass{
+  display: flex;
+}
+
+.Header_UL li { 
+color: black;
+padding-top: 20px;
+}
+
+
+.Header_UL li:hover {
+ 
+  color: gray;
+}
+
+/* 
+.Header_UL {
+  display: none;
+
+} */
 
 }
 
-.HeroSection_img
-{
-  width: 100%;
-}
-.MobileImageFirst {
-  position: relative;
-  height: 972px;
-  z-index: -20;
-  right: 155px;
-  top: -326px;
-}
-.MobileImageSecond {
- 
-  left: 81px;
- 
-}
- 
 
-.HeroSection_PremireSec p {
+
+
+
+
+
+@media screen and (width < 440px) {
+  .ServiceList {
+     
+    width: 100%;
+    margin: 0 !important;
+ 
+}
+  .ServiceList div {
+    width: 51%;
+}
+.ServiceList div {
+  width: 71%;
+  display: flex;
   text-align: center;
-  width: 87%;
+  align-items: center;
 
 }
-.HeroSection_PremireSec h1 {
-  font-size: 35px;
-  text-align: center;
- 
+
+.ServiceList p {
+  width: 125%;
+}
+.LatestArticles div {
+  width: 80%;
 }
 
-.Service_division {
-  background-color: red;
-  position: relative;
-  z-index: -33;
-  margin: 0;
-  padding: 0%;
-  width: 100%;
-  text-align: center;
+.LatestArticlesMain h1 {
+  margin-bottom: 15%;
+  display: flex;
+  justify-content: center;
 }
-
-
-Service_division
- 
 }
