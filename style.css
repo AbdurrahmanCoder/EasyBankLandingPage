@@ -30,7 +30,7 @@ body {
 
 header {
   /* background-color: #de4949; */
-  width: 100%;
+  width: 103%;
   position: relative;
   z-index: 100;
   background-color: #fff;
@@ -266,11 +266,11 @@ padding-top: 10px;
 footer{
   background-color: var(--DarkBlue);
   display: flex;
- 
+
   margin: auto 10%; 
   margin-top: 10%;
   padding: 4%;
-  justify-content: space-between;
+  justify-content:space-around;  
 }
 footer > div {display: flex;
 flex-direction: column;
@@ -296,14 +296,7 @@ footer p:hover{
 
 
 
-
-/* 
-.HeroSection_img{
-  background-image: url("images/bg-intro-desktop.svg");  
-  background-size: 100%;
-  background-repeat: no-repeat;
-} */
-
+ 
 
 /* **************************************** Media Queries Starts Here ************************** */
 
@@ -324,6 +317,9 @@ footer p:hover{
     /* display: none; */
 
   }
+  header{
+    position: fixed;
+  }
 
   .ReqHead {
     display: none;
@@ -338,8 +334,23 @@ footer p:hover{
 
 
 
+  footer{
+    background-color: var(--DarkBlue);
+    display: flex;
+    flex-wrap: wrap; 
+    margin: auto 10%; 
+    margin-top: 10%;
+    padding: 4%;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    justify-content:center;  
+  }
 
-
+  footer > div {
+ 
+    text-align: center;
+}
   .HeroSection_PremireSec {
     /* padding-top: 50%; */
     margin-top: 50%;

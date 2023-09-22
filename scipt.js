@@ -10,22 +10,33 @@ icon.addEventListener("click",()=>{
  
 Header_UL.classList.toggle('newClass') 
 //  Header_UL.style.display = "flex"
- console.log("working")
- 
- 
+console.log(Header_UL.className) 
+ console.log(Header_UL.classList.contains("newClass")) 
+
+
+if(Header_UL.classList.contains("newClass") === true)
+{
 let Hamburgeru = document.getElementById('Hamburgeru')
  let a = document.createElement("img")
 Hamburgeru.setAttribute('src','../images/icon-close.svg') 
-console.log(a)
+console.log(a) 
+Hamburgeru.appendChild(a)  
+}
+else 
+{
 
-Hamburgeru.appendChild(a)
- 
+    let Hamburgeru = document.getElementById('Hamburgeru')
+    let b= document.createElement("img")
+   Hamburgeru.setAttribute('src','../images/icon-hamburger.svg') 
+   console.log(b) 
+   Hamburgeru.appendChild(b)  
 
+
+}
 
 })
 
 
 
-Hamburgeru.removeChild(a)
 
 Header_UL.classList.remove('newClass')
